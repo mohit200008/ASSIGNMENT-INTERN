@@ -24,9 +24,7 @@ const Ninjas = ({ data }) => {
                     <a className={styles.single}>
                         <h2>{ninja.country}</h2>
                         <p>Active Cases:{ninja.active}</p>
-                        <Link href="/covid/history">
-                            <a className={style.btn}>Show previous cases</a>
-                        </Link>
+                        
                     </a>
 
                 </Link>
