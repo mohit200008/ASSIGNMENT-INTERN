@@ -32,7 +32,7 @@ export const getStaticProps = async (context) => {
 
 const Details = ({ ninja }) => {
     return (
-        <div className={styles.single} key={ninja.country}>
+        <div className={styles.single}>
             <h1>{ninja.country}</h1>
             <div style={{ display: "flex" }}>
                 <div style={{ padding: 12, marginLeft: 15, border: '2px solid yellow' }}>
