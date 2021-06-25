@@ -23,7 +23,7 @@ export const getStaticProps = async (context) => {
   const id = context.params.id;
   const res = await fetch('https://corona.lmao.ninja/v2/countries/' + id);
   const data = await res.json();
-  console.log(data)
+ 
 
   return {
     props: { ninja: data }
