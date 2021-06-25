@@ -32,7 +32,7 @@ export const getStaticProps = async (context) => {
 
 const Details = ({ ninja }) => {
   return (
-    <div className={styles.single} key={ninja.countryInfo._id}>
+    <div className={styles.single}>
       <h1>Country:{ninja.country}</h1>
       <p>No Of Cases:{ninja.cases}</p>
       <p>Todays Cases:{ninja.todayCases}</p>
