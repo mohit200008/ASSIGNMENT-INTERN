@@ -35,52 +35,58 @@ const Details = ({ ninja }) => {
         <div className={styles.single}>
             <h1>{ninja.country}</h1>
             <div style={{ display: "flex" }}>
-                <div style={{  padding:12,marginLeft: 15,border: '2px solid yellow'}}>
+                <div style={{ padding: 12, marginLeft: 15, border: '2px solid yellow' }}>
                     {
                         Object.keys(ninja.timeline.cases).map((key, i) => (
                             <table key={i}>
-                                <tr>
-                                    <th>DATE</th>
-                                    <th>Cases</th>
-                                </tr>
-                                <tr>
-                                    <td>{key}</td>
-                                    <td>{ninja.timeline.cases[key]}</td>
-                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <th>DATE</th>
+                                        <th>Cases</th>
+                                    </tr>
+                                    <tr>
+                                        <td>{key}</td>
+                                        <td>{ninja.timeline.cases[key]}</td>
+                                    </tr>
+                                </tbody>
 
                             </table>
                         ))
                     }
                 </div>
-                <div style={{  padding:12, marginLeft: 18,border: '2px solid red' }}>
+                <div style={{ padding: 12, marginLeft: 18, border: '2px solid red' }}>
                     {
                         Object.keys(ninja.timeline.deaths).map((key, i) => (
                             <table key={i}>
-                                <tr>
-                                    <th>DATE</th>
-                                    <th>Deaths</th>
-                                </tr>
-                                <tr>
-                                    <td>{key}</td>
-                                    <td>{ninja.timeline.deaths[key]}</td>
-                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <th>DATE</th>
+                                        <th>Deaths</th>
+                                    </tr>
+                                    <tr>
+                                        <td>{key}</td>
+                                        <td>{ninja.timeline.deaths[key]}</td>
+                                    </tr>
+                                </tbody>
 
                             </table>
                         ))
                     }
                 </div>
-                <div style={{ padding:12, marginLeft: 20, border: '2px solid green' }}>
+                <div style={{ padding: 12, marginLeft: 20, border: '2px solid green' }}>
                     {
                         Object.keys(ninja.timeline.recovered).map((key, i) => (
                             <table key={i}>
-                                <tr>
-                                    <th>DATE</th>
-                                    <th>Recovered</th>
-                                </tr>
-                                <tr>
-                                    <td>{key}</td>
-                                    <td style={{marginLeft:10}}>{ninja.timeline.recovered[key]}</td>
-                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <th>DATE</th>
+                                        <th>Recovered</th>
+                                    </tr>
+                                    <tr>
+                                        <td>{key}</td>
+                                        <td style={{ marginLeft: 10 }}>{ninja.timeline.recovered[key]}</td>
+                                    </tr>
+                                </tbody>
 
                             </table>
                         ))
